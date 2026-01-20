@@ -20,10 +20,7 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(
   cors({
-    origin: [
-      process.env.CORS_ORIGIN || "http://localhost:3000",
-      "https://kechei-store.vercel.app",
-    ],
+    origin: ["http://localhost:3000", "https://kechei-store.vercel.app"],
   }),
 );
 
